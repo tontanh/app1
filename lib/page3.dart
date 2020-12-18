@@ -4,7 +4,7 @@ class Page3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyHomePage(title: 'Flutter food ton app ap apapp app '),
+      home: MyHomePage(title: 'TestApp'),
     );
   }
 }
@@ -29,7 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'page 33three33',
+              'Page 3',
             ),
           ],
         ),
