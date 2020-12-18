@@ -1,20 +1,25 @@
 import 'package:flutter/material.dart';
+import 'page1.dart';
 
 void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatefulWidget {
-  @override
-  _MyAppState createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text("hello world ton"),
+    return MaterialApp(
+      home: ton(),
+    );
+  }
+}
+
+class ton extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: FlutterLogo(
+        size: 300,
       ),
     );
   }
