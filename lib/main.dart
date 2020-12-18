@@ -19,7 +19,7 @@ class ton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: FlutterLogo(
-        size: 500,
+        size: 100,
       ),
     );
   }
