@@ -1,3 +1,14 @@
+#Command git
+git pull => update if something changed
+git init => add git start begin
+git add . => add all file prepare upload
+git commit -m "" => set version git change
+git push => upload git
+git push -f => upload git --force No commant
+
+
+
+
 # app1
 
 A new Flutter project.
