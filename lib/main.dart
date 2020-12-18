@@ -1,19 +1,15 @@
 import 'package:flutter/material.dart';
-import 'page1.dart';
+import 'home_page.dart';
 
-Main() {
-  runApp(ton());
+void main() {
+  runApp(Myapp());
 }
 
-class ton extends StatelessWidget {
+class Myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'ton abb',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: page1(),
+      home: Homepage(),
     );
   }
 }
