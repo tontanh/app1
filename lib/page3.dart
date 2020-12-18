@@ -1,4 +1,6 @@
+import 'package:app1/page1.dart';
 import 'package:flutter/material.dart';
+import 'page1.dart';
 
 class Page3 extends StatelessWidget {
   @override
@@ -25,14 +27,18 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'Page 3',
+        child: RaisedButton(
+            child: Text(
+              "go back page1",
+              style: TextStyle(color: Colors.white),
             ),
-          ],
-        ),
+            color: Colors.blue,
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Page1()),
+              );
+            }),
       ),
     );
   }
