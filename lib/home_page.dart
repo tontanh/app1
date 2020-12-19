@@ -8,19 +8,50 @@ class Homepage extends StatelessWidget {
         title: Text(
           'Sign in',
         ),
+        backgroundColor: Colors.yellow[400],
       ),
-      body: Column(
-        children: [
-          Column(
-            children: [
-              Center(
-                child: Text(
-                  "this is first application that make by ton",
+      body: Column(),
+      bottomNavigationBar: Container(
+          height: 60,
+          color: Colors.white,
+          child: Container(
+            decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(40),
+                  topRight: Radius.circular(40),
                 ),
-              ),
-            ],
-          ),
-        ],
+                boxShadow: [
+                  BoxShadow(
+                      blurRadius: 20, color: Colors.grey[350], spreadRadius: 1)
+                ]),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                buildContainerNavibottom(Icons.person),
+                buildContainerNavibottom(Icons.shopping_bag),
+                buildContainerNavibottom(Icons.home, isSelected: true),
+                buildContainerNavibottom(Icons.favorite),
+                buildContainerNavibottom(Icons.settings),
+              ],
+            ),
+          )),
+    );
+  }
+
+  Container buildContainerNavibottom(IconData icon, {isSelected = false}) {
+    return Container(
+      decoration: BoxDecoration(
+          color: isSelected ? Colors.yellow : Colors.white,
+          shape: BoxShape.circle,
+          boxShadow: isSelected
+              ? [BoxShadow(color: Colors.grey, blurRadius: 10, spreadRadius: 1)]
+              : []),
+      height: 50,
+      width: 50,
+      child: Icon(
+        icon,
+        color: isSelected ? Colors.white : Colors.black,
       ),
     );
   }
