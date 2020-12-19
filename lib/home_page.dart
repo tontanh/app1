@@ -9,15 +9,19 @@ class Homepage extends StatelessWidget {
           'Sign in',
         ),
       ),
-      body: Center(
-          child: RaisedButton(
-        child: Text(
-          "Sign in",
-          style: TextStyle(color: Colors.white),
-        ),
-        color: Colors.blue[300],
-        onPressed: () {},
-      )),
+      body: Column(
+        children: [
+          Column(
+            children: [
+              Center(
+                child: Text(
+                  "this is first application that make by ton",
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
