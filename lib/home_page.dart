@@ -10,7 +10,10 @@ class Homepage extends StatelessWidget {
         ),
         backgroundColor: Colors.yellow[400],
       ),
-      body: Column(),
+      body: Center(
+          child: RaisedButton(
+        textColor: Colors.yellow,
+      )),
       bottomNavigationBar: Container(
           height: 60,
           color: Colors.white,
@@ -23,7 +26,7 @@ class Homepage extends StatelessWidget {
                 ),
                 boxShadow: [
                   BoxShadow(
-                      blurRadius: 20, color: Colors.grey[350], spreadRadius: 1)
+                      blurRadius: 20, color: Colors.grey[400], spreadRadius: 1)
                 ]),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
