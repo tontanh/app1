@@ -6,7 +6,7 @@ class Homepage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Sign in',
+          'Sign out',
         ),
         backgroundColor: Colors.yellow[400],
       ),
